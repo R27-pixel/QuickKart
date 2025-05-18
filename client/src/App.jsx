@@ -11,11 +11,13 @@ import Footer from "./components/Footer";
 import AdminLogin from "./pages/admin/AdminLogin";
 import AdminPanel from "./pages/admin/AdminPanel";
 import PrivateAdminRoute from "./components/PrivateAdminRoute";
+import PrivateSellersRoute from "./components/PrivateSellersRoute";
 
 import SellerSignUp from "./pages/sellers/SignUp";
 import SellerCreateProfile from "./pages/sellers/CreateProfile";
 import SellerDashboard from "./pages/sellers/SellerDashboard";
 import SellerAddProduct from "./pages/sellers/AddProduct";
+import SellerLogin from "./pages/sellers/Login";
 
 export default function App() {
   return (
@@ -50,8 +52,17 @@ export default function App() {
 
           {/* Seller Routes */}
           <Route path="/sellers/signup" element={<SellerSignUp />} />
+          <Route path="/sellers/login" element={<SellerLogin />} />
           <Route path="/sellers/create-profile" element={<SellerCreateProfile />} />
-          <Route path="/sellers/dashboard" element={<SellerDashboard />} />
+          <Route
+            path="/sellers/dashboard"
+            //here we will be  using the PrivateSellersRoute component to protect the dashboard route like this <PrivateSellersRoute>
+            element={
+              
+                <SellerDashboard />
+            
+            }
+          />
           <Route path="/sellers/add-product" element={<SellerAddProduct />} />
         </Routes>
         <Footer />
