@@ -9,7 +9,7 @@ export default function ExperienceSection() {
         <p className="mb-4">100% Local. Simple to use. Empowering your community.</p>
       </div>
       <div className="md:w-1/2">
-        <img src="https://via.placeholder.com/300" alt="Experience" className="mx-auto" />
+        <img src="https://i.postimg.cc/GtP3Ssk9/Experience.jpg" alt="Experience" className="mx-auto" />
       </div>
     </section>
   );

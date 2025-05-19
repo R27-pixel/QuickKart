@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <section className="bg-purple-900 text-white text-center p-16">
+    <section className="bg-yellow-500 text-white text-center p-16">
       <h1 className="text-4xl font-bold mb-4">Discover Local Treasures with QuickKart</h1>
       <p className="mb-8">Find and shop from local vendors easily</p>
       <div className="flex justify-center gap-4">

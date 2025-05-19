@@ -2,10 +2,11 @@
 import React from "react";
 import BenefitCard from "./BenefitCard";
 
+
 const benefits = [
-  { title: "Empower Your Selling Experience", description: "Tools tailored for local vendors.", image: "https://via.placeholder.com/100" },
-  { title: "Save Your Favorites with Bookmarks", description: "Easy access to preferred products.", image: "https://via.placeholder.com/100" },
-  { title: "Seamless Navigation for All Users", description: "Designed for accessibility and speed.", image: "https://via.placeholder.com/100" },
+  { title: "Empower Your Selling Experience", description: "Tools tailored for local vendors." },
+  { title: "Save Your Favorites with Bookmarks", description: "Easy access to preferred products." },
+  { title: "Seamless Navigation for All Users", description: "Designed for accessibility and speed." },
 ];
 
 export default function ProductBenefitsSection() {
